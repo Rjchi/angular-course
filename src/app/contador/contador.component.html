@@ -1,1 +1,12 @@
+<!-- AL UTILIZAR LA INTERPOLACION EL VALOR QUE PONGAMOS SOLO SE PUEDE VISUALIZAR EN ESTE COMPONENTE -->
+
 <h1>Este es el componente llamado contador</h1>
+<p>Nombre: {{ persona.nombre }}</p>
+<p>Edad: {{ persona.edad }}</p>
+
+<!-- Escuchamos eventos -->
+<div>
+  <button (click)="decremento()">MENOS</button>
+  <span>{{ numero }}</span>
+  <button (click)="incremento()">MAS</button>
+</div>

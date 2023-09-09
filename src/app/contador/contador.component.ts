@@ -2,7 +2,8 @@
  * |  Este componente puede ser llamado
  * |  dentro de otro componente
  -------------------------------------------------*/
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Persona } from '../persona';
 
 @Component({
   selector: 'app-contador',
@@ -19,4 +20,20 @@ import { Component } from '@angular/core';
 /**-------------------------------------------------
  * |  Aqui va toda la logica de este componente
  -------------------------------------------------*/
-export class ContadorComponent {}
+export class ContadorComponent implements OnInit {
+  constructor() {}
+
+  ngOnInit(): void {}
+
+  persona: Persona = { nombre: 'Richi', edad: 40 };
+
+  numero: number = 1;
+
+  decremento() {
+    this.numero--;
+  }
+
+  incremento() {
+    this.numero++;
+  }
+}
