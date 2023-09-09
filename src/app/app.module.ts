@@ -6,7 +6,8 @@ import { BrowserModule } from '@angular/platform-browser';
  -----------------------------------*/
 import { AppComponent } from './app.component';
 import { ContadorComponent } from "./contador/contador.component";
-import { ComponentCliExampleComponent } from './component-cli-example/component-cli-example.component'
+import { ComponentCliExampleComponent } from './component-cli-example/component-cli-example.component';
+import { BotonesComponent } from './botones/botones.component'
 
 /**-------------------------------------------------------------------------
  * |  Aqui registramos todos los componentes que forman parte de este modulo
@@ -16,6 +17,7 @@ import { ComponentCliExampleComponent } from './component-cli-example/component-
     AppComponent,
     ContadorComponent,
     ComponentCliExampleComponent,
+    BotonesComponent,
   ],
   imports: [
     BrowserModule
