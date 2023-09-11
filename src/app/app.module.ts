@@ -11,7 +11,10 @@ import { BotonesComponent } from './botones/botones.component';
 import { BotonesPropiedadesComponent } from './botones-propiedades/botones-propiedades.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { BuclesComponent } from './bucles/bucles.component';
-import { SwitchComponent } from './switch/switch.component'
+import { SwitchComponent } from './switch/switch.component';
+import { FormBasPlantComponent } from './form-bas-plant/form-bas-plant.component';
+
+import { FormsModule } from "@angular/forms";
 
 /**-------------------------------------------------------------------------
  * |  Aqui registramos todos los componentes que forman parte de este modulo
@@ -26,9 +29,15 @@ import { SwitchComponent } from './switch/switch.component'
     FormularioComponent,
     BuclesComponent,
     SwitchComponent,
+    FormBasPlantComponent,
   ],
+  /**--------------------------------------------------------------------
+   * |  Si tenemos configuraciones adicionales que se hallan
+   * |  Incluido en un modulo aparte se debe poner aquí.
+   --------------------------------------------------------------------*/
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

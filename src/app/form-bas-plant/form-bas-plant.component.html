@@ -1,0 +1,13 @@
+<div class="mb-3">
+  <!-- Escuchamos el evento de envio de este formulario -->
+  <form (ngSubmit)="metodoProcesador()">
+    <!-- Si modifico algo en los inputs tambien se va a modificar en el componente TS -->
+    <label class="form-label">Name</label>
+    <input type="text" class="form-control" [(ngModel)]="persona.nombre" name="nombre" >
+    <label class="form-label">Edad</label>
+    <input type="text" class="form-control" [(ngModel)]="persona.edad" name="edad">
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+{{ persona | json }}
