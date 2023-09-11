@@ -1,0 +1,13 @@
+<!-- Asi asignamos el valor que queremos evaluar -->
+<main [ngSwitch]="dia">
+  <input type="text" #nuevoDia />
+  <button (click)="dia = nuevoDia.value">Mostrar dia</button>
+  <span *ngSwitchCase="'1'">Lunes</span>
+  <span *ngSwitchCase="'2'">Martes</span>
+  <span *ngSwitchCase="'3'">Miercoles</span>
+  <span *ngSwitchCase="'4'">Jueves</span>
+  <span *ngSwitchCase="'5'">Viernes</span>
+  <span *ngSwitchCase="'6'">Sabado</span>
+  <span *ngSwitchCase="'7'">Domingo</span>
+  <span *ngSwitchDefault>No existe</span>
+</main>

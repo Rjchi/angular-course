@@ -10,7 +10,8 @@ import { ComponentCliExampleComponent } from './component-cli-example/component-
 import { BotonesComponent } from './botones/botones.component';
 import { BotonesPropiedadesComponent } from './botones-propiedades/botones-propiedades.component';
 import { FormularioComponent } from './formulario/formulario.component';
-import { BuclesComponent } from './bucles/bucles.component'
+import { BuclesComponent } from './bucles/bucles.component';
+import { SwitchComponent } from './switch/switch.component'
 
 /**-------------------------------------------------------------------------
  * |  Aqui registramos todos los componentes que forman parte de este modulo
@@ -24,6 +25,7 @@ import { BuclesComponent } from './bucles/bucles.component'
     BotonesPropiedadesComponent,
     FormularioComponent,
     BuclesComponent,
+    SwitchComponent,
   ],
   imports: [
     BrowserModule
