@@ -6,11 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formulario.component.css'],
 })
 export class FormularioComponent implements OnInit {
+
+  openAlert: boolean = false;
+
   constructor() {}
 
   ngOnInit(): void {}
 
   Consola(value:any) {
-    console.log('Hola', value, value.length);
+    if (value) {
+      console.log('Hola', value, value.length);
+      this.openAlert = !this.openAlert;
+
+      setTimeout(() => {
+        this.openAlert = !this.openAlert;
+      }, 2000)
+    }
   }
 }

@@ -5,3 +5,8 @@
   <input type="text" class="form-control" placeholder="NOMBRE" #name>
   <button class="btn btn-primary" (click)="Consola(name.value)">Mostrar en consola</button>
 </div>
+
+<!-- Al usar directivas como esta el elemento es eliminado directamente del DOM -->
+<div class="alert alert-danger mt-4" *ngIf="openAlert">
+  Se a enviado el mensaje
+</div>
