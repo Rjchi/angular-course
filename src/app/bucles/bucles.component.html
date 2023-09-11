@@ -1,0 +1,11 @@
+<main>
+  <ul>
+    <!-- Con esto hacemos que se repita el elemento con diferente valor -->
+    <!-- Y asignamos el valor de la iteracion en la variable item -->
+    <li *ngFor="let persona of personas; let item = index">
+      <h4>{{item + 1}}</h4>
+      <p>{{persona.nombre}}</p>
+      <p>{{persona.edad}}</p>
+    </li>
+  </ul>
+</main>
