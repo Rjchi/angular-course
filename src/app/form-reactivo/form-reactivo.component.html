@@ -3,10 +3,22 @@
     <div class="mb-3">
       <!-- De esta manera sincronizamos estos inputs con las propiedades que hay en el componente -->
       <input type="text" class="form-control form-control-sm" placeholder="Name" [formControl]="name">
+      <div class="alert alert-danger" [hidden]="name.valid || name.pristine">
+        <span>nombre obligatorio</span>
+      </div>
       <input type="email" class="form-control form-control-sm" placeholder="Email" [formControl]="email">
+      <div class="alert alert-danger" [hidden]="email.valid || email.pristine">
+        <!-- Validamos y en caso de que este error no exista, le decimos que ignore esto -->
+        <!-- eso lo hacemos con el ?. -->
+        <span *ngIf="email.errors?.['required']">email obligatorio</span>
+        <span *ngIf="email.errors?.['email']">email debe ser valido</span>
+      </div>
     </div>
     <button class="btn btn-success" type="submit">Enviar</button>
   </form>
 </div>
 
+<!-- {{ email.errors | json }} -->
+
 {{ name.value }}
+{{ email.value }}
