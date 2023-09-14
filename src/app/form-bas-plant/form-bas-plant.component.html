@@ -3,11 +3,23 @@
   <form (ngSubmit)="metodoProcesador()">
     <!-- Si modifico algo en los inputs tambien se va a modificar en el componente TS -->
     <label class="form-label">Name</label>
-    <input type="text" class="form-control" [(ngModel)]="persona.nombre" name="nombre" >
+    <!-- Validamos el input -->
+    <input type="text" class="form-control" [(ngModel)]="persona.nombre" name="nombre" required #name="ngModel">
+    <div class="alert alert-danger mt-2" [hidden]="name.valid || name.pristine">Obligatorio</div>
     <label class="form-label">Edad</label>
-    <input type="text" class="form-control" [(ngModel)]="persona.edad" name="edad">
+    <input type="text" class="form-control" [(ngModel)]="persona.edad" name="edad" required #edad="ngModel">
+    <div class="alert alert-danger mt-2" [hidden]="edad.valid || edad.pristine">Obligatorio</div>
     <button type="submit">Enviar</button>
   </form>
 </div>
 
-{{ persona | json }}
+
+<!-- Con esto podemos ver las reglas de validacion que no se estan cumpliendo -->
+{{ name.errors | json }}
+{{ edad.errors | json }}
+
+<!-- {{ persona | json }} -->
+
+<!-- Si alguna regla de validacion no se esta cumpliendo aqui voy a ver false -->
+{{ name.valid }}
+{{ edad.valid }}
