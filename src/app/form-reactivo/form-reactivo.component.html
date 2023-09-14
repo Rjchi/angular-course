@@ -1,0 +1,12 @@
+<div class="mb-3">
+  <form>
+    <div class="mb-3">
+      <!-- De esta manera sincronizamos estos inputs con las propiedades que hay en el componente -->
+      <input type="text" class="form-control form-control-sm" placeholder="Name" [formControl]="name">
+      <input type="email" class="form-control form-control-sm" placeholder="Email" [formControl]="email">
+    </div>
+    <button class="btn btn-success" type="submit">Enviar</button>
+  </form>
+</div>
+
+{{ name.value }}

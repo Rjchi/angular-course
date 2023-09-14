@@ -14,7 +14,16 @@ import { BuclesComponent } from './bucles/bucles.component';
 import { SwitchComponent } from './switch/switch.component';
 import { FormBasPlantComponent } from './form-bas-plant/form-bas-plant.component';
 
+/**----------------------------------------------------------------------
+ * |  Esto es para trabajar con formularios basados en plantillas
+ ----------------------------------------------------------------------*/
 import { FormsModule } from "@angular/forms";
+
+/**----------------------------------------------------------------------
+ * |  Esto es para trabajar con formularios reactivos
+ ----------------------------------------------------------------------*/
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormReactivoComponent } from './form-reactivo/form-reactivo.component';
 
 /**-------------------------------------------------------------------------
  * |  Aqui registramos todos los componentes que forman parte de este modulo
@@ -30,6 +39,7 @@ import { FormsModule } from "@angular/forms";
     BuclesComponent,
     SwitchComponent,
     FormBasPlantComponent,
+    FormReactivoComponent,
   ],
   /**--------------------------------------------------------------------
    * |  Si tenemos configuraciones adicionales que se hallan
@@ -37,7 +47,8 @@ import { FormsModule } from "@angular/forms";
    --------------------------------------------------------------------*/
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
