@@ -1,4 +1,8 @@
 <div>
-  <div>{{title}}</div>
-  <input type="text" [(ngModel)]="title">
+  <hr>
+  <div>VALUE: {{title}}</div>
+  <hr>
+  <h2>Componente Hijo</h2>
+  <!-- Este evento se emite cada que hacemos click en el input -->
+  <input type="text" (keyup)="emitTitleChange()" [(ngModel)]="title">
 </div>

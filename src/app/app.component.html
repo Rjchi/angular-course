@@ -1,5 +1,5 @@
 <main>
-  <h1>Curos de Angular</h1>
+  <h1>Componente Padre</h1>
 
   <input type="text" [(ngModel)]="title">
 
@@ -23,6 +23,11 @@
 
   <!-- <app-form-reactivo></app-form-reactivo> -->
 
-  <app-children [title]="title"></app-children>
+  <!-- EN EVENT QUEDA ALMACENADA LA INFORMACION QUE ESTAMOS MANDANDO DESDE EL COMPONENTE HIJO -->
+  <!-- titleChange ES EL EVENTO QUE ESTAMOS ESCUCHANDO -->
+  <!-- <app-children [title]="title" (titleChange)="title = $event"></app-children> -->
+
+  <!-- ESTA ES LA FORMA SIMPLIFICADA DE LO ANTERIOR -->
+  <app-children [(title)]="title"></app-children>
 
 </main>
