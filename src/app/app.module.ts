@@ -23,7 +23,9 @@ import { FormsModule } from "@angular/forms";
  * |  Esto es para trabajar con formularios reactivos
  ----------------------------------------------------------------------*/
 import { ReactiveFormsModule } from '@angular/forms';
+
 import { FormReactivoComponent } from './form-reactivo/form-reactivo.component';
+import { ChildrenComponent } from './children/children.component';
 
 /**-------------------------------------------------------------------------
  * |  Aqui registramos todos los componentes que forman parte de este modulo
@@ -40,6 +42,7 @@ import { FormReactivoComponent } from './form-reactivo/form-reactivo.component';
     SwitchComponent,
     FormBasPlantComponent,
     FormReactivoComponent,
+    ChildrenComponent,
   ],
   /**--------------------------------------------------------------------
    * |  Si tenemos configuraciones adicionales que se hallan
