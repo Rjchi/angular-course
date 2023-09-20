@@ -26,6 +26,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { FormReactivoComponent } from './form-reactivo/form-reactivo.component';
 import { ChildrenComponent } from './children/children.component';
+import { AddMessagesComponent } from './add-messages/add-messages.component';
+import { ListMessagesComponent } from './list-messages/list-messages.component';
 
 /**-------------------------------------------------------------------------
  * |  Aqui registramos todos los componentes que forman parte de este modulo
@@ -43,6 +45,8 @@ import { ChildrenComponent } from './children/children.component';
     FormBasPlantComponent,
     FormReactivoComponent,
     ChildrenComponent,
+    AddMessagesComponent,
+    ListMessagesComponent,
   ],
   /**--------------------------------------------------------------------
    * |  Si tenemos configuraciones adicionales que se hallan
