@@ -1,0 +1,23 @@
+<main class="container-fluid">
+  <nav>
+    <ul class="nav justify-content-center  ">
+      <li class="nav-item">
+        <!-- Con router link hacemos que no se recargue la pagina -->
+        <a class="nav-link text-warning" routerLink="/home" routerLinkActive="active fw-bold">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-warning" routerLink="/contact" routerLinkActive="active fw-bold">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-warning" routerLink="/about" routerLinkActive="active fw-bold">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-warning" routerLink="/courses" routerLinkActive="active fw-bold">Courses</a>
+      </li>
+    </ul>
+  </nav>
+  <div>
+    <!-- Esto se reemplaza por el componente que tenemos en el enrutamiento -->
+    <router-outlet></router-outlet>
+  </div>
+</main>
