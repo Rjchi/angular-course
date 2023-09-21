@@ -1,1 +1,15 @@
-<p>add-messages works!</p>
+<main>
+  <h3 class="text-primary">ADD MESSAGE</h3>
+
+  <div class="m-4">
+    <form class="border p-3" (ngSubmit)="addMessage()">
+      <input type="text" class="form-control" placeholder="Ingrese un mensaje" name="message" [(ngModel)]="message" >
+      <!-- <p>
+        <strong>VALOR DEL SERVICIO:</strong>
+        {{ messagesService.messages | json }}
+      </p> -->
+      <button class="btn btn-primary">Agregar</button>
+    </form>
+  </div>
+
+</main>
