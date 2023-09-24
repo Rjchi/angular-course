@@ -30,4 +30,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 En este proyecto vemos la creación de modulos con 'ng g m' appRouting --flat(no lo incluimos dentro de una carpeta pero si dentro del modulo principal como un archivo), tambien vemos el uso de la carga perezosa(lazy loading) y modulos compartidos(shared).
 Con este comando creamos un modulo general y un modulo de rutas para este modulo(blog) ng g m blog --routing.
 Con este comando creamos un componete dentro de un modulo en especifico ng g c courses/ListCourses.
-Modulo compartido con ng g m shared
+Modulo compartido con ng g m shared, Generar carpeta de environments ng g environments
